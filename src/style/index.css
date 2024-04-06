@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "lalezar";
+  src: url("../../public/font/lalezar.ttf");
+}
+@font-face {
+  font-family: "iransanse";
+  src: url("../../public/font/Iranian-Sans.ttf");
+}
+@font-face {
+  font-family: "yekan";
+  src: url("../../public/font/Yekan.ttf");
+}
+@font-face {
+  font-family: "vazir";
+  src: url("../../public/font/Vazir.ttf"),
+       url("../../public/font/Vazir.woff");
+}
+* {
+  box-sizing: border-box;
+  font-family: vazir;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+.content{
+  width: 100%;
+  height: 100vh;
+  transform: translateX(11px);
+}
+.containerSLider{
+  max-height: 300px;
+  position: relative;
+}
+
+.containerSLider .image-slider{
+  width: 100%;
+  height: 300px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: fade 1s linear;
+
+}
+@keyframes fade {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+.containerSLider button{
+  all: inset;
+  border: none;
+  background-color: lightgray;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform : translateX(-50%);
+  color: rgb(16, 75, 151);
+}
+.containerSLider button.previous-item{
+  left: 30px;
+}
+.containerSLider button.next-item{
+  right: 30px;
+}
+
+.content .containerdote{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(20px);
+}
+.content .containerdote .point{
+  width: 10px;
+  height: 10px;
+  background-color: gray;
+  border-radius: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
