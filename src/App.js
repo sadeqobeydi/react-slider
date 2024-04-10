@@ -31,6 +31,7 @@ function App() {
 
 
     const goToSlide = (index)=>{
+        currentIndex < index ? setStatusSlider('next') : setStatusSlider('previous')
         setCurrentIndex(index)
     }
 
